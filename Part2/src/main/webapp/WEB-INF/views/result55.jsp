@@ -7,9 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h2>모든 글자수를 <br>
-더한 값은 ${sum }<br>
-자이다.
-</h2>
+${param.num1 } 부터 ${param.num2 } 까지의 <br>
+합은 ${sum }
 </body>
 </html>

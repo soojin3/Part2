@@ -23,6 +23,7 @@
 	
 	<context:component-scan base-package="edu.c305.mit.controller" />
 	<context:component-scan base-package="edu.mit.quiz" />
+	<context:component-scan base-package="edu.mit.last" />
 	
 	
 	
