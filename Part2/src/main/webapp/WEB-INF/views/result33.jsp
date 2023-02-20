@@ -7,7 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-${param.num1 } 부터 ${param.num2 } 까지의 <br>
-합은 ${sum }
+<h2>나는 views/에는 result.jsp 입니다.</h2>
 </body>
 </html>

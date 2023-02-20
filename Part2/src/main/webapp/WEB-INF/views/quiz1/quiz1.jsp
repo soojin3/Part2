@@ -7,7 +7,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-${param.num1 } 부터 ${param.num2 } 까지의 <br>
-합은 ${sum }
+<form action="/quiz1/result" method="get">
+<input type="number" name="num1">+
+<input type="number" name="num2"><br>
+<input type="submit" value="계산">
+</form>
+
 </body>
 </html>
