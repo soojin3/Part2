@@ -4,28 +4,29 @@ public class ProductVO {
 	// 제품이름
 	// 제품가격
 	private String name;
-	private int price;
-
+	private Integer price;
 	public String getName() {
 		return name;
 	}
-
 	public void setName(String name) {
 		this.name = name;
 	}
-
-	public int getPrice() {
+	public Integer getPrice() {
 		return price;
 	}
-
-	public void setPrice(int price) {
+	public void setPrice(Integer price) {
 		this.price = price;
 	}
-
-	public ProductVO(String name, int price) {
+	@Override
+	public String toString() {
+		return "ProductVO [name=" + name + ", price=" + price + "]";
+	}
+	public ProductVO(String name, Integer price) {
 		super();
 		this.name = name;
 		this.price = price;
 	}
+
+	
 
 }

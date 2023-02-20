@@ -1,5 +1,9 @@
 package edu.c305.mit.controller;
 
+import java.util.logging.Logger;
+
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Lookup;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -42,10 +46,27 @@ public class TestController {
 	}
 	//파라메터 자동수집 (form으로 보내온 데이터)
 	@RequestMapping("ex01")
-	public void exex01(ProductVO vo) {
+	public void exex01(String name,Integer price, ProductVO vo) {
 		//vo 객체 만들어서 보내온 데이터로 다 세팅된다. 
+		Logger log = Logger.getLogger("aaa");
+		
+		Logger log2 = Logger.getLogger("edu.c305.mit.aaaa");
+		log2.info("나와2");
+		
+		//Logger log = Logger.getLogger(TestController.class);
+		//Logger logger = LoggerFactory.getLogger(TestController.class);
+		
+		System.out.println(name+"  "+price);
+		log.info("나오나");
+		log.info("수집된 값"+vo);
+		//Java beans객체(겟터, 세터있는)로 수집된 데이터는 자동으로 model을 통해서 전달된다. 
+		//(즉, model.addAttribute(vo);수행되었다.)
 	}
-	
+	//input.jsp 열기
+	@RequestMapping("input")
+	public String input() {
+		return "input";
+	}
 	
 
 }
